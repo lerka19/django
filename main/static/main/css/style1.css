@@ -30,7 +30,9 @@ nav form {
   background-color: #F0F8FF;
   padding: 10px;
   border-radius: 5px;
-  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 form {
@@ -280,10 +282,10 @@ nav.showing div + .hamburger .line:nth-child(3) {
     position: relative;
   }
 
-  nav form{
+  /*nav form{
     position: relative;
     right: calc(100% - 20px);
-  }
+  }*/
 
   .cookie {
     font-size: 15px;
@@ -411,10 +413,10 @@ nav.showing div + .hamburger .line:nth-child(3) {
     position: relative;
   }
 
-  nav form{
+  /*nav form{
     position: relative;
     right: calc(100% - 130px);
-  }
+  }*/
 
   .cookie {
     font-size: 14px;
