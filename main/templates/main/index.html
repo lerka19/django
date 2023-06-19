@@ -74,12 +74,40 @@
 	</main>
 	<div id="gw" class="gw">
 			<h1>{% trans 'Gwiazdy' %}</h1>
-			<ul>
-				<li>{% trans 'Słońce – gwiazda centralna Układu Słonecznego, wokół której krąży Ziemia, inne planety tego układu, planety karłowate oraz małe ciała Układu Słonecznego. Słońce składa się z gorącej plazmy utrzymywanej przez grawitację i kształtowanej przez pole magnetyczne. Jest prawie idealnie kuliste. Około trzy czwarte masy Słońca stanowi wodór, resztę głównie hel. Pozostałe 1,69 procent tworzą cięższe pierwiastki, w tym m.in. tlen, węgiel, neon i żelazo.' %}</li>
-				<li>{% trans 'Syriusz – najjaśniejsza i jedna z najbliższych gwiazd południowego nieba, położona w gwiazdozbiorze Wielkiego Psa. Jej jasność obserwowana to −1,47 magnitudo, a odległość od Słońca jest równa 8,6 roku świetlnego.' %}</li>
-				<li>{% trans 'Antares – najjaśniejsza gwiazda w gwiazdozbiorze Skorpiona. Jest oddalona od Słońca o około 550 lat świetlnych.' %}</li>
-				<li>{% trans 'Aludra – gwiazda w gwiazdozbiorze Wielkiego Psa.' %}</li>
-			</ul>
+		<div class="all">
+			<div class="row">
+				<div class="col1">
+					<div class="zdjecia"><img src="{% static 'main/img/sun.jpg' %}" alt="1"></div>
+				</div>
+				<div class="col">
+					<div class="tekst">{% trans 'Słońce – gwiazda centralna Układu Słonecznego, wokół której krąży Ziemia, inne planety tego układu, planety karłowate oraz małe ciała Układu Słonecznego. Słońce składa się z gorącej plazmy utrzymywanej przez grawitację i kształtowanej przez pole magnetyczne. Jest prawie idealnie kuliste. Około trzy czwarte masy Słońca stanowi wodór, resztę głównie hel. Pozostałe 1,69 procent tworzą cięższe pierwiastki, w tym m.in. tlen, węgiel, neon i żelazo.' %}</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="tekst">{% trans 'Syriusz – najjaśniejsza i jedna z najbliższych gwiazd południowego nieba, położona w gwiazdozbiorze Wielkiego Psa. Jej jasność obserwowana to −1,47 magnitudo, a odległość od Słońca jest równa 8,6 roku świetlnego.' %}</div>
+				</div>
+				<div class="col1">
+					<div class="zdjecia"><img src="{% static 'main/img/sirius.jpg' %}" alt="2"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<div class="zdjecia"><img src="{% static 'main/img/antares.jpg' %}" alt="3"></div>
+				</div>
+				<div class="col">
+					<div class="tekst">{% trans 'Antares – najjaśniejsza gwiazda w gwiazdozbiorze Skorpiona. Jest oddalona od Słońca o około 550 lat świetlnych.' %}</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="tekst">{% trans 'Aludra – gwiazda w gwiazdozbiorze Wielkiego Psa.' %}</div>
+				</div>
+				<div class="col1">
+					<div class="zdjecia"><img src="{% static 'main/img/aludra.jpg' %}" alt="4"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="cookie" id="accept">
 		<span>
