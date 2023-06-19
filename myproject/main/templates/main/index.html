@@ -1,0 +1,97 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>Gwiazdy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style1.css' %}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<script src="{% static 'main/js/scr.js' %}"></script>
+</head>
+<body>
+	<header id="home">
+		<nav>
+			<p><a href="#home" onclick="home();"><img src="{% static 'main/img/logo.png' %}" alt="logo"></a></p>
+			<span><form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+				<input name="next" type="hidden" value="{{ redirect_to }}">
+				<select name="language">
+					{% get_current_language as LANGUAGE_CODE %}
+					{% get_available_languages as LANGUAGES %}
+					{% get_language_info_list for LANGUAGES as languages %}
+					{% for language in languages %}
+						<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+							{{ language.name_local }} ({{ language.code }})
+						</option>
+					{% endfor %}
+				</select>
+				<input type="submit" value="Go">
+			</form></span>
+			<div class="mobile-menu">
+				<ul>
+					<li><a href="#home" onclick="home();">{% trans 'Strona Główna' %}</a></li>
+					<!--<li><a href="gra.html">Gra</a></li>-->
+					<li><a href="#zd" onclick="zd();">{% trans 'Biblioteka zdjęć' %}</a></li>
+					<li><a href="#gw" onclick="gw();">{% trans 'Biblioteka gwiazd' %}</a></li>
+				</ul>
+			</div>
+			<div class="hamburger" onclick="toggleMenu();">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</nav>
+	</header>
+	<main id="zd">
+		<h1>{% trans 'Policzmy razem gwiazdy!' %}</h1>
+		<p>{% trans 'W tej chwili można tu zobaczyć tylko gwiazdy.' %}</p>
+		<div class="all">
+			<div class="row">
+				<div class="col1">
+					<div class="zdjecia"><img src="{% static 'main/img/zd1.jpg' %}" alt="1"></div>
+				</div>
+				<div class="col">
+					<div class="tekst">{% trans 'Astronomowie uważają, że cały widzialny wszechświat zawiera 2 biliony galaktyk czyli: 2 000 000 000 000. Każda galaktyka z kolei zawiera kilkaset miliardów gwiazd. To daje niesamowitą ilość 200 tryliardów (200 000 000 000 000 000 000 000) gwiazd we wszechświecie. Ale możecie sami sprawdzić dla pewności.' %}</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="tekst">{% trans 'Im są one mniejsze, tym dłużej żyją. Gwiazdy olbrzymie są jasne, ale mają tendencję do szybkiego wypalania się.' %}</div>
+				</div>
+				<div class="col1">
+					<div class="zdjecia"><img src="{% static 'main/img/zd2.jpg' %}" alt="2"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col1">
+					<div class="zdjecia"><img src="{% static 'main/img/zd3.jpg' %}" alt="3"></div>
+				</div>
+				<div class="col">
+					<div class="tekst">{% trans 'Istnieje wiele różnych rodzajów gwiazd. Gwiazdy, które znajdują się w swojej głównej sekwencji (gwiazdy normalne) są kategoryzowane według ich koloru. Najmniejsze gwiazdy są czerwone i nie wydzielają dużo blasku. Gwiazdy średniej wielkości są żółte, podobnie jak Słońce. Największe gwiazdy są niebieskie i są bardzo jasne. Im większa jest główna gwiazda sekwencji, tym są one cieplejsze i jaśniejsze.' %}</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div id="gw" class="gw">
+			<h1>{% trans 'Gwiazdy' %}</h1>
+			<ul>
+				<li>{% trans 'Słońce – gwiazda centralna Układu Słonecznego, wokół której krąży Ziemia, inne planety tego układu, planety karłowate oraz małe ciała Układu Słonecznego. Słońce składa się z gorącej plazmy utrzymywanej przez grawitację i kształtowanej przez pole magnetyczne. Jest prawie idealnie kuliste. Około trzy czwarte masy Słońca stanowi wodór, resztę głównie hel. Pozostałe 1,69 procent tworzą cięższe pierwiastki, w tym m.in. tlen, węgiel, neon i żelazo.' %}</li>
+				<li>{% trans 'Syriusz – najjaśniejsza i jedna z najbliższych gwiazd południowego nieba, położona w gwiazdozbiorze Wielkiego Psa. Jej jasność obserwowana to −1,47 magnitudo, a odległość od Słońca jest równa 8,6 roku świetlnego.' %}</li>
+				<li>{% trans 'Antares – najjaśniejsza gwiazda w gwiazdozbiorze Skorpiona. Jest oddalona od Słońca o około 550 lat świetlnych.' %}</li>
+				<li>{% trans 'Aludra – gwiazda w gwiazdozbiorze Wielkiego Psa.' %}</li>
+			</ul>
+	</div>
+	<div class="cookie" id="accept">
+		<span>
+			<i class="fas fa-regular fa-cookie-bite"></i>
+			{% trans 'Fajnie jest jeść ciasteczka i patrzeć na gwiazdy? Nasze ciasteczka możesz zaakceptować bez obaw. Wykorzystujemy je wyłącznie w celu jak najlepszego dostosowania naszej strony do Twoich potrzeb. Zmiany zasad przechowywania lub uzyskiwania dostępu do plików cookies możesz dokonać w każdym czasie w ustawieniach swojej przeglądarki.' %}
+		</span>
+		<div class="cookie-button">
+			<button onclick="button();">{% trans 'Akceptuj' %}</button>
+		</div>
+	</div>
+	<footer>
+		<p>&copy; 2023 Counting Stars</p>
+	</footer>
+</body>
+</html>
