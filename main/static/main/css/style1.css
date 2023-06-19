@@ -24,6 +24,8 @@ nav {
 nav img {
   max-width: 80%;
   height: auto;
+  width: auto;
+  height: 100%;
 }
 
 nav form {
@@ -36,7 +38,6 @@ nav form {
 }
 
 form {
-  display: inline-block;
   background-color: #F0F8FF;
   padding: 10px;
   border-radius: 5px;
@@ -86,7 +87,7 @@ nav ul {
 
 nav li {
   font-size: 1.3rem;
-  margin-left: 1rem;
+  margin-left:0 1rem;
 }
 
 nav li a {
@@ -322,6 +323,15 @@ nav.showing div + .hamburger .line:nth-child(3) {
       float: right;
   }
 
+  .gw ul {
+    font-size: 1.0rem;
+    padding: 0px 70px 100px 60px;
+  }
+
+  .gw li {
+    margin-bottom:1rem;
+  }
+
   .showing {
 	  position: relative;
   }
@@ -387,17 +397,22 @@ nav.showing div + .hamburger .line:nth-child(3) {
   
   .zdjecia img {
   margin-top: 20px;
+  width: 100%;
+  height: auto;
 }
   
    .row {
     flex-direction: column;
+    min-height: 0;
   }
-  .col1 {
+  .col1, .col {
     flex-basis: 100%;
+    width: 100%;
+    flex: 1 1 auto;
   }
-  .col {
+  /*.col {
     flex-basis: 100%;
-  }
+  }*/
   
   .row:nth-child(2) .col1 {
     order: 1;
@@ -536,5 +551,9 @@ nav.showing div + .hamburger .line:nth-child(3) {
   
   .row:nth-child(2) .col {
     order: 2;
+  }
+
+  .gw ul {
+    font-size: 0.95rem;
   }
 }
