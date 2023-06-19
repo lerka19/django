@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-19 03:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\main\templates\main\index.html:76
+msgid "Gwiazdy"
+msgstr "Stars"
+
+#: .\main\templates\main\index.html:32
+msgid "Strona Główna"
+msgstr "Main Page"
+
+#: .\main\templates\main\index.html:34
+msgid "Biblioteka zdjęć"
+msgstr "Photo Library"
+
+#: .\main\templates\main\index.html:35
+msgid "Biblioteka gwiazd"
+msgstr "Library of stars"
+
+#: .\main\templates\main\index.html:46
+msgid "Policzmy razem gwiazdy!"
+msgstr "Let's count the stars together!"
+
+#: .\main\templates\main\index.html:47
+msgid "W tej chwili można tu zobaczyć tylko gwiazdy."
+msgstr "Right now, you can only see the stars."
+
+msgid "Astronomowie uważają, że cały widzialny wszechświat zawiera 2 biliony galaktyk czyli: 2 000 000 000 000. Każda galaktyka z kolei zawiera kilkaset miliardów gwiazd. To daje niesamowitą ilość 200 tryliardów (200 000 000 000 000 000 000 000) gwiazd we wszechświecie. Ale możecie sami sprawdzić dla pewności."
+msgstr "Astronomers believe that the entire visible universe contains 2 trillion galaxies, or 2,000,000,000,000,000. Each galaxy contains several hundred billion stars. This gives an incredible amount of 200 trillion (200 000 000 000 000 000 000 000) stars in the universe. But you can check for yourself to be sure."
+
+msgid "Im są one mniejsze, tym dłużej żyją. Gwiazdy olbrzymie są jasne, ale mają tendencję do szybkiego wypalania się."
+msgstr "The smaller they are, the longer they live. Giant stars are bright, but tend to burn out quickly."
+
+msgid "Istnieje wiele różnych rodzajów gwiazd. Gwiazdy, które znajdują się w swojej głównej sekwencji (gwiazdy normalne) są kategoryzowane według ich koloru. Najmniejsze gwiazdy są czerwone i nie wydzielają dużo blasku. Gwiazdy średniej wielkości są żółte, podobnie jak Słońce. Największe gwiazdy są niebieskie i są bardzo jasne. Im większa jest główna gwiazda sekwencji, tym są one cieplejsze i jaśniejsze."
+msgstr "There are many different types of stars. Stars that are in their main sequence (normal stars) are categorized by their color. The smallest stars are red and do not emit much light. Medium-sized stars are yellow, just like The Sun. The biggest stars are blue and very bright. The larger the main sequence star, the warmer and brighter they are."
+
+#: .\main\templates\main\index.html:78
+msgid "Słońce – gwiazda centralna Układu Słonecznego, wokół której krąży Ziemia, inne planety tego układu, planety karłowate oraz małe ciała Układu Słonecznego. Słońce składa się z gorącej plazmy utrzymywanej przez grawitację i kształtowanej przez pole magnetyczne. Jest prawie idealnie kuliste. Około trzy czwarte masy Słońca stanowi wodór, resztę głównie hel. Pozostałe 1,69 procent tworzą cięższe pierwiastki, w tym m.in. tlen, węgiel, neon i żelazo."
+msgstr "The sun is the central star of the solar system, around which the Earth, other planets of this system, dwarf planets and small bodies of the solar system revolve. The sun is made up of hot plasma held by gravity and shaped by a magnetic field. It's almost perfectly spherical. About three-quarters of the mass of The Sun is hydrogen, the rest is helium. The remaining 1.69% consists of heavier elements, including m.in. oxygen, carbon, neon and iron."
+
+#: .\main\templates\main\index.html:79
+msgid "Syriusz – najjaśniejsza i jedna z najbliższych gwiazd południowego nieba, położona w gwiazdozbiorze Wielkiego Psa. Jej jasność obserwowana to −1,47 magnitudo, a odległość od Słońca jest równa 8,6 roku świetlnego."
+msgstr "Sirius-the brightest and one of the closest stars of the southern sky, located in the constellation of the Great Dog. Its observed brightness is -1.47 magnitude and its distance from The Sun is 8.6 light years."
+
+#: .\main\templates\main\index.html:80
+msgid "Antares – najjaśniejsza gwiazda w gwiazdozbiorze Skorpiona. Jest oddalona od Słońca o około 550 lat świetlnych."
+msgstr "Antares is the brightest star in the constellation Scorpio. It is about 550 light-years away from The Sun."
+
+#: .\main\templates\main\index.html:81
+msgid "Aludra – gwiazda w gwiazdozbiorze Wielkiego Psa."
+msgstr "Aludra is a star in the constellation Canis Major."
+
+msgid "Fajnie jest jeść ciasteczka i patrzeć na gwiazdy? Nasze ciasteczka możesz zaakceptować bez obaw. Wykorzystujemy je wyłącznie w celu jak najlepszego dostosowania naszej strony do Twoich potrzeb. Zmiany zasad przechowywania lub uzyskiwania dostępu do plików cookies możesz dokonać w każdym czasie w ustawieniach swojej przeglądarki."
+msgstr "Is it fun to eat cookies and watch the stars? You can accept our cookies without fear. We use them only in order to best adapt our site to your needs. You can change the rules for storing or accessing cookies at any time in the settings of your browser."
+
+msgid "Akceptuj"
+msgstr "Accept"
+
+#: .\myproject\settings.py:113
+msgid "Polish"
+msgstr "Polski"
+
+#: .\myproject\settings.py:114
+msgid "English"
+msgstr "English"
