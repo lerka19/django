@@ -13,7 +13,7 @@
 	<header id="home">
 		<nav>
 			<p><a href="#home" onclick="home();"><img src="{% static 'main/img/logo.png' %}" alt="logo"></a></p>
-			<span><form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+			<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
 				<input name="next" type="hidden" value="{{ redirect_to }}">
 				<select name="language">
 					{% get_current_language as LANGUAGE_CODE %}
@@ -26,7 +26,7 @@
 					{% endfor %}
 				</select>
 				<input type="submit" value="Go">
-			</form></span>
+			</form>
 			<div class="mobile-menu">
 				<ul>
 					<li><a href="#home" onclick="home();">{% trans 'Strona Główna' %}</a></li>
