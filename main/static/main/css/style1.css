@@ -254,11 +254,15 @@ nav.showing div + .hamburger .line:nth-child(3) {
 
 .gw {
     display: none;
-    z-index: 1;
+    /*z-index: 1;
+    margin: 2rem auto;*/
+    max-width: 80%;
     margin: 2rem auto;
+    padding: 0 1rem;
+    color: #000;
 }
 
-.gw h1 {
+/*.gw h1 {
     padding: 100px;
 } 
 
@@ -276,7 +280,7 @@ nav.showing div + .hamburger .line:nth-child(3) {
 .gw ul li a {
     padding: 0;
     text-align: left;
-}
+}*/
 
 @media screen and (max-width: 720px) {
    header {
@@ -421,6 +425,14 @@ nav.showing div + .hamburger .line:nth-child(3) {
   .row:nth-child(2) .col {
     order: 2;
   }
+
+  .row:nth-child(4) .col1 {
+    order: 1;
+  }
+
+  .row:nth-child(4) .col {
+    order: 2;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -550,6 +562,14 @@ nav.showing div + .hamburger .line:nth-child(3) {
   }
   
   .row:nth-child(2) .col {
+    order: 2;
+  }
+
+  .row:nth-child(4) .col1 {
+    order: 1;
+  }
+
+  .row:nth-child(4) .col {
     order: 2;
   }
 
